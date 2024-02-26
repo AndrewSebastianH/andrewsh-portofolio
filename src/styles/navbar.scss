@@ -1,12 +1,17 @@
+// navbar.scss
+
 .marquee-container {
     overflow: hidden;
-    white-space: nowrap;
   }
   
   .marquee-content {
-    animation: marquee 20s linear infinite;
+    animation: marquee 10s linear infinite;
+    animation-delay: -20s;
+    white-space: nowrap;
+  }
+  
+  .marquee-content span {
     display: inline-block;
-    padding-right: 100%; /* Ensure content moves all the way off the screen */
   }
   
   @keyframes marquee {
@@ -17,3 +22,4 @@
       transform: translateX(100%);
     }
   }
+  

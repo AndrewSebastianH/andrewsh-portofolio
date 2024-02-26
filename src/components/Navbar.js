@@ -1,13 +1,19 @@
+// Navbar.jsx
+
 import React from "react";
 import CustomButton from "./CustomButton";
 import "../styles/navbar.scss";
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
 
+const marqueeContent =
+  "ANDREW SEBASTIAN HARDIANTA ♦ IT STUDENT ♠ ASPIRING SOFTWARE DEVELOPER ★";
+
 const Marquee = () => {
   return (
     <div className="marquee-container">
-      <div className="marquee-content font-jockey">
-        ANDREW SEBASTIAN HARDIANTA ♦ IT STUDENT ♠ ASPIRING SOFTWARE DEVELOPER
+      <div className="tracking-widest marquee-content font-jockey flex">
+        <p>{marqueeContent}</p>
+        <p>{marqueeContent}</p>
       </div>
     </div>
   );
@@ -30,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="border-black border-b-4"></div>
-      <div className=" container bg-yellow-200 border-black border-b-4">
+      <div className="container bg-yellow-200 border-black border-b-4">
         <Marquee />
       </div>
     </>
