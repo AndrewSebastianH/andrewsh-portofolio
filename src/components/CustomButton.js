@@ -6,7 +6,7 @@ const CustomButton = ({ children, onClick, href, disabled, className }) => {
       onClick={onClick}
       href={href}
       disabled={disabled}
-      class={`font-jockey text-black border-black border-2 bg-white rounded-full ${className}`}
+      class={`text-2xl pt-1 pb-1 pl-4 pr-4 font-jockey text-black border-black border-4 bg-white rounded-full ${className}`}
     >
       {children}
     </button>
