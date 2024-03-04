@@ -34,7 +34,7 @@ const Marquee = () => {
 const Navbar = () => {
   return (
     <>
-      <div className="m-5">
+      <div className="p-5">
         <div className="flex bg-white items-center justify-between">
           <div className="buttons gap-3 flex">
             <CustomButton>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <CustomButton>PROJECTS</CustomButton>
             <CustomButton>CONTACT ME</CustomButton>
           </div>
-          <div className="text-4xl font-bebas">
+          <div className="text-2.5xl font-bebas">
             <Typewriter
               options={{
                 strings: [
@@ -56,10 +56,9 @@ const Navbar = () => {
                 ],
                 autoStart: true,
                 loop: true,
-                pauseFor: 3000,
+                pauseFor: 3500,
               }}
             />
-            {/* ANDREW SEBASTIAN HARDIANTA */}
           </div>
         </div>
       </div>

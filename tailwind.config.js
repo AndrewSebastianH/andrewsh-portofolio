@@ -22,8 +22,10 @@ module.exports = {
         md: "1em", // 16px
         lg: "1.125em", // 18px
         xl: "1.5em", // 24px
-        "2xl": "1.75em", // 28px
+        "2xl": "2em", // 28px
+        "2.5xl": "2.75em",
         "3xl": "3em", // 48px
+        "4xl": "3.75em",
         "error-header": "5em", // 80px
         "error-code": "6.25em", // 100px
       },
