@@ -1,6 +1,6 @@
 // Navbar.jsx
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import CustomButton from "./CustomButton";
 import "../styles/navbar.scss";
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
@@ -32,9 +32,22 @@ const Marquee = () => {
 };
 
 const Navbar = () => {
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const height = navbarRef.current.offsetHeight;
+    document.documentElement.style.setProperty(
+      "--navbar-height",
+      `${height}px`
+    );
+  }, []);
+
   return (
-    <>
-      <div className="p-5">
+    <div
+      ref={navbarRef}
+      className="max-h-[140px] max-w-[100vw] sticky z-50 top-0 left-0 right-0 bg-white"
+    >
+      <div className="m-5">
         <div className="flex bg-white items-center justify-between">
           <div className="buttons gap-3 flex">
             <CustomButton>
@@ -66,7 +79,7 @@ const Navbar = () => {
       <div className="bg-yellow-200 border-black border-b-4">
         <Marquee />
       </div>
-    </>
+    </div>
   );
 };
 
