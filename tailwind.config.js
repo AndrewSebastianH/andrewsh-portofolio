@@ -11,6 +11,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%": { transform: "scale(1) rotate(0deg)" },
+          "25%": { transform: "scale(1.025) rotate(-5deg)" },
+          "50%": { transform: "scale(1.025) rotate(5deg)" },
+          "75%": { transform: "scale(1.025) rotate(-5deg)" },
+          "100%": { transform: "scale(1) rotate(0deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1500ms cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
         jockey: ["Jockey One", "sans-serif"],
@@ -26,6 +38,7 @@ module.exports = {
         "2.5xl": "2.75em",
         "3xl": "3em", // 48px
         "4xl": "3.75em",
+        giant: "5em",
         "error-header": "5em", // 80px
         "error-code": "6.25em", // 100px
       },

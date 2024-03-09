@@ -30,9 +30,9 @@ export default function ExpCarousel() {
         className="h-4/5 py-10"
         loop={false}
         style={{
-          "--swiper-pagination-color": "#222222",
-          "--swiper-pagination-bullet-inactive-color": "#999999",
-          "--swiper-pagination-bullet-inactive-opacity": "0.5",
+          "--swiper-pagination-color": "#f2f2f2",
+          "--swiper-pagination-bullet-inactive-color": "#f6f6f6",
+          "--swiper-pagination-bullet-inactive-opacity": "0.4",
           "--swiper-pagination-bullet-size": "12px",
           "--swiper-pagination-bullet-horizontal-gap": "8px",
         }}

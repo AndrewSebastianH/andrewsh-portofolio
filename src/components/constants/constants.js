@@ -40,7 +40,7 @@ const constants = {
       name: "Fachhochschule Sudwestfalen",
       title: "Bachelor of Engineering",
       content:
-        "Studied here for 7 months as part of the requirements for double degree",
+        "Exchange semester for 7 months as part of the requirement for double degree",
       category: "Education - Bachelor's Degree",
       date: "Feb 2024 - Aug 2024",
       icon: "./assets/fh.png",

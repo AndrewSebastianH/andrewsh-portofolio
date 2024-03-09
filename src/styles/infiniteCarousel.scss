@@ -1,0 +1,12 @@
+
+@keyframes moveup {
+    to {
+        transform: 
+        translateY(calc(-50% - 0.5em));
+    }
+}
+
+.infinite-carousel div {
+    white-space: nowrap;
+    animation: moveup 8s linear infinite;
+}

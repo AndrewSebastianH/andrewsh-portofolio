@@ -4,6 +4,7 @@ import "./global.scss";
 import { useState } from "react";
 import Navbar, { navbarHeight } from "./components/Navbar";
 import ExpCarousel from "./components/ExpCarousel";
+import InfiniteProjectSection from "./components/InfiniteProjectSection";
 import { gsap } from "gsap";
 import { RoughEase } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -48,7 +49,7 @@ function App() {
               </div>
               <div className="justify-items-center">
                 <img
-                  className="md:visible md:w-[67%] align-center "
+                  className="portrait md:visible md:w-[67%] align-center hover:animate-wiggle "
                   src="./assets/Portrair.png"
                   alt="Portrait"
                 />
@@ -59,9 +60,9 @@ function App() {
       </div>
 
       {/* 2nd Sect */}
-      <section className="h-screen shrink-0 pt-5 bg-white border-t-4 border-black ">
+      <section className="h-screen shrink-0 pt-5 bg-black border-t-4 border-black ">
         <div className="flex justify-end">
-          <div className="font-jockey font-outline-2 text-3xl pr-10">
+          <div className="text-white font-jockey font-outline-2-white text-4xl pr-10">
             EXPERIENCES / EDUCATION
           </div>
         </div>
@@ -71,7 +72,15 @@ function App() {
       </section>
 
       {/* 3rd Sect */}
-      <section className="h-screen shrink-0 p-8 bg-green-700">3</section>
+      <section className="relative overflow-hidden flex flex-col h-screen shrink-0 p-8 bg-black border-t-4 border-black">
+        <div className="absolute -top-10 leading-snug">
+          <InfiniteProjectSection />
+        </div>
+        <div className="text-white ">kontol</div>
+      </section>
+      <section className="h-screen shrink-0 p-8 bg-blue-700">
+        <div className="font-jockey text-3xl justi">CONTACT ME!</div>
+      </section>
     </div>
   );
 }
