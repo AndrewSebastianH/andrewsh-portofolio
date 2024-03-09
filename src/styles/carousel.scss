@@ -1,0 +1,17 @@
+
+
+.swiper-pagination-bullet {
+    .swiper-pagination-bullet-active {
+        color: #000;
+    }
+}
+
+.swiper-wrapper {
+    max-width: 95vw;
+}
+
+.text-container {
+overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
