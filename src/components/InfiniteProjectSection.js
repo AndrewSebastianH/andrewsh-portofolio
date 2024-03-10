@@ -3,8 +3,8 @@
 import React from "react";
 import "../styles/infiniteCarousel.scss";
 
-const InfiniteProjectSection = () => {
-  const repetitions = Array(16).fill("PROJECTS");
+const InfiniteProjectSection = ({ text }) => {
+  const repetitions = Array(12).fill(text);
   const carousels = document.querySelectorAll(".infinite-carousel-title");
 
   const directions = ["normal", "reverse", "normal"];
@@ -16,11 +16,11 @@ const InfiniteProjectSection = () => {
       const duplicatedItem = item.cloneNode(true);
       carouselItem.appendChild(duplicatedItem);
     });
-    carouselItem.style.animation = "move 12s linear infinite";
+    carouselItem.style.animation = "move 10s linear infinite";
   });
 
   return (
-    <div className="infinite-carousel">
+    <div className="infinite-carousel overflow-hidden -mt-10">
       <div>
         {repetitions.map((text, index) => (
           <div key={index} className="text-giant font-jockey text-white">
