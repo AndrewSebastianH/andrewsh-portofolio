@@ -1,5 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#222222",
+
+          secondary: "#facc15",
+
+          accent: "#fef9c3",
+
+          neutral: "#f3f4f6",
+
+          "base-100": "#d1d5db",
+
+          info: "#38bdf8",
+
+          success: "#4ade80",
+
+          warning: "#fdba74",
+
+          error: "#ef4444",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,11 +38,21 @@ module.exports = {
     extend: {
       keyframes: {
         wiggle: {
-          "0%": { transform: "scale(1) rotate(0deg)" },
-          "25%": { transform: "scale(1.025) rotate(-5deg)" },
-          "50%": { transform: "scale(1.025) rotate(5deg)" },
-          "75%": { transform: "scale(1.025) rotate(-5deg)" },
-          "100%": { transform: "scale(1) rotate(0deg)" },
+          "0%": {
+            transform: "scale(1) rotate(0deg)",
+          },
+          "25%": {
+            transform: "scale(1.025) rotate(-5deg)",
+          },
+          "50%": {
+            transform: "scale(1.025) rotate(5deg)",
+          },
+          "75%": {
+            transform: "scale(1.025) rotate(-5deg)",
+          },
+          "100%": {
+            transform: "scale(1) rotate(0deg)",
+          },
         },
       },
       animation: {
@@ -28,18 +63,28 @@ module.exports = {
         jockey: ["Jockey One", "sans-serif"],
       },
       fontSize: {
-        "2xs": "0.625em", // 10px
-        xs: "0.75em", // 12px
-        sm: "0.875em", // 14px
-        md: "1em", // 16px
-        lg: "1.125em", // 18px
-        xl: "1.5em", // 24px
-        "2xl": "2em", // 28px
+        "2xs": "0.625em",
+        // 10px
+        xs: "0.75em",
+        // 12px
+        sm: "0.875em",
+        // 14px
+        md: "1em",
+        // 16px
+        lg: "1.125em",
+        // 18px
+        xl: "1.5em",
+        // 24px
+        "2xl": "2em",
+        // 28px
         "2.5xl": "2.75em",
-        "3xl": "3em", // 48px
+        "3xl": "3em",
+        // 48px
         "4xl": "3.75em",
         giant: "5em",
-        "error-header": "5em", // 80px
+        giga: "10em",
+        "error-header": "5em",
+        // 80px
         "error-code": "6.25em", // 100px
       },
       padding: {
@@ -50,6 +95,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
   important: true,
 };
