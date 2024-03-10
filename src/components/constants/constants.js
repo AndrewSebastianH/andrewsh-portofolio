@@ -49,43 +49,76 @@ const constants = {
 
   projects: [
     {
-      id: 1,
-      name: "Project1",
-      bgimage: "./assets/apalah.png",
-      description: "lmao lupacik",
-      links: "github.com",
+      page: 1,
+      data: [
+        {
+          id: 1,
+          name: "Web3 Lottery App",
+          bgimage: "./assets/projects/1.png",
+          description: "lmao lupacik",
+          links: "https://github.com/andreatheodora/lottery-web3-app",
+        },
+        {
+          id: 2,
+          name: "ThreeJS Portofolio Website",
+          bgimage: "./assets/projects/2.png",
+          description: "lmao lupacik",
+          links: "https://github.com/AndrewSebastianH/PortofolioThreejs",
+        },
+        {
+          id: 3,
+          name: "Coffeeshop Management App",
+          bgimage: "./assets/projects/3.jpg",
+          description: "lmao lupacik",
+          links: "https://github.com/AndrewSebastianH/CoffeeshopFrontend",
+        },
+        {
+          id: 4,
+          name: "Sneaker Management App",
+          bgimage: "./assets/projects/4.jpg",
+          description: "lmao lupacik",
+          links:
+            "https://github.com/AndrewSebastianH/SneakerManagement-project",
+        },
+      ],
     },
     {
-      id: 2,
-      name: "Project2",
-      bgimage: "./assets/apalah.png",
-      description: "lmao lupacik",
-      links: "github.com",
-    },
-    {
-      id: 3,
-      name: "Project3",
-      bgimage: "./assets/apalah.png",
-      description: "lmao lupacik",
-      links: "github.com",
-    },
-    {
-      id: 4,
-      name: "Project4",
-      bgimage: "./assets/apalah.png",
-      description: "lmao lupacik",
-      links: "github.com",
-    },
-    {
-      id: 5,
-      name: "Project4",
-      bgimage: "./assets/apalah.png",
-      description: "lmao lupacik",
-      links: "github.com",
+      page: 2,
+      data: [
+        {
+          id: 5,
+          name: "Unique Calculator App",
+          bgimage: "./assets/projects/5.jpg",
+          description: "lmao lupacik",
+          links: "https://github.com/AndrewSebastianH/JavaCalculatorProject",
+        },
+        {
+          id: 6,
+          name: "Security Onion Implementation",
+          bgimage: "./assets/projects/6.png",
+          description: "lmao lupacik",
+          links: "bodoamad.com",
+        },
+        {
+          id: 7,
+          name: "Windows Health Monitoring",
+          bgimage: "./assets/projects/7.png",
+          description: "lmao lupacik",
+          links: "bodoamad.com",
+        },
+        // {
+        //   id: 8,
+        //   name: "More to Come!  ",
+        //   bgimage: "./assets/projects/8.png",
+        //   description: "lmao lupacik",
+        //   links: null,
+        // },
+      ],
     },
   ],
   linkedinURL: "https://www.linkedin.com/in/andrew-sebastian-hardianta/",
   githubURL: "https://github.com/AndrewSebastianH",
+  email: "andrew.hardianta.business@gmail.com",
 };
 
 export { constants };
