@@ -5,6 +5,7 @@ import { useState } from "react";
 import Navbar, { navbarHeight } from "./components/Navbar";
 import ExpCarousel from "./components/ExpCarousel";
 import InfiniteProjectSection from "./components/InfiniteProjectSection";
+import ProjectSlider from "./components/ProjectsSlider";
 import { gsap } from "gsap";
 import { RoughEase } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -26,7 +27,7 @@ function App() {
       <Navbar onHeightChange={setNavbarHeight} />
       <div style={{ paddingTop: `${navbarHeight}px` }}>
         {/* 1st Sect */}
-        <section className="shrink-0 p-8 ">
+        <section className="relative shrink-0 p-8 ">
           <div className="mainContainer absolute -z-40 top-0 left-0 right-0 h-full background " />
 
           <div className="w-full rounded-3xl shadow sm:p-8 border-black border-4 bg-white">
@@ -60,7 +61,7 @@ function App() {
       </div>
 
       {/* 2nd Sect */}
-      <section className="h-screen shrink-0 pt-5 bg-black border-t-4 border-black ">
+      <section className="background2 h-screen shrink-0 pt-5 bg-black">
         <div className="flex justify-end">
           <div className="text-white font-jockey font-outline-2-white text-4xl pr-10">
             EXPERIENCES / EDUCATION
@@ -72,14 +73,33 @@ function App() {
       </section>
 
       {/* 3rd Sect */}
-      <section className="relative overflow-hidden flex flex-col h-screen shrink-0 p-8 bg-black border-t-4 border-black">
-        <div className="absolute -top-10 leading-snug">
-          <InfiniteProjectSection />
+      <section className=" relative overflow-hidden flex flex-col shrink-0 p-8 bg-black border-t-4 border-black">
+        <div className="flex flex-row">
+          <div className="leading-snug w-[40%]">
+            <InfiniteProjectSection text="PROJECTS" />
+          </div>
+          <div className="flex-initial flex-row h-[500px] w-[55%]">
+            <ProjectSlider />
+          </div>
         </div>
-        <div className="text-white ">kontol</div>
       </section>
-      <section className="h-screen shrink-0 p-8 bg-blue-700">
-        <div className="font-jockey text-3xl justi">CONTACT ME!</div>
+
+      {/* 4th Sect */}
+      <section className="shrink-0 background3 bg-white p-8 pt-10">
+        <div className="diff h-full aspect-[16/9]">
+          <div className="diff-item-1">
+            <div className="bg-black text-white text-9xl font-black grid place-content-center">
+              CONTACT ME!
+            </div>
+          </div>
+          <div className="diff-item-2">
+            <div className="bg-white text-9xl font-black grid place-content-center">
+              CONTACT ME!
+            </div>
+            <div>asu</div>
+          </div>
+          <div className="diff-resizer"></div>
+        </div>
       </section>
     </div>
   );
