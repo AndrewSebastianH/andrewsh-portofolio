@@ -22,7 +22,7 @@ const Marquee = () => {
   return (
     <div className="marquee-container">
       <div
-        className="tracking-widest marquee-content font-jockey flex"
+        className="tracking-widest marquee-content font-jockey flex text-white"
         onAnimationIteration={handleAnimationIteration}
       >
         <p>{currentMarqueeContent}</p>
@@ -80,7 +80,7 @@ const Navbar = ({ onHeightChange }) => {
           </div>
         </div>
         <div className="border-black border-b-4"></div>
-        <div className="sticky bg-yellow-200 border-black border-b-4">
+        <div className="sticky bg-[#222222] border-black border-b-4">
           <Marquee />
         </div>
       </div>
