@@ -4,8 +4,7 @@ const constants = {
     "THANK YOU FOR VISITING MY SITE! :)",
     "DON'T FORGET TO CONNECT WITH ME IN LINKEDIN!",
     "THIS WEBSITE IS MADE USING REACT.JS BY ME :)",
-    "FUN FACT: DID YOU KNOW THAT PIGS CAN NOT LOOK UP TO THE SKY?",
-    // "FUN FACT: THIS WEBSITE IS MADE UNDER 1 WEEK!",
+    "FUN FACT: THIS WEBSITE IS MADE AND DEPLOYED UNDER 2 WEEKS!",
     "FUN FACT: GIRAFFES ARE 30 TIMES MORE LIKELY TO GET HIT BY LIGHTNING THAN PEOPLE!",
     "FUN FACT: MY FAVOURITE FLAVOUR IN ANYTHING IS CHOCOLATE!",
   ],
@@ -26,7 +25,7 @@ const constants = {
     {
       id: 2,
       name: "Swiss German University",
-      title: "Informations Technology",
+      title: "Information Technology",
       content:
         "GPA: 3.89" +
         "\n Half-funded scholarship student" +
@@ -106,13 +105,13 @@ const constants = {
           description: "lmao lupacik",
           links: "bodoamad.com",
         },
-        // {
-        //   id: 8,
-        //   name: "More to Come!  ",
-        //   bgimage: "./assets/projects/8.png",
-        //   description: "lmao lupacik",
-        //   links: null,
-        // },
+        {
+          id: 8,
+          name: "More to Come!  ",
+          bgimage: "",
+          description: "lmao lupacik",
+          links: null,
+        },
       ],
     },
   ],
