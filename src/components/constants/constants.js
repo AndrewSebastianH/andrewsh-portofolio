@@ -96,18 +96,33 @@ const constants = {
           name: "Security Onion Implementation",
           bgimage: "./assets/projects/6.png",
           description: "lmao lupacik",
-          links: "bodoamad.com",
+          links:
+            "https://drive.google.com/file/d/1FdLXcAY9AQDPU7EPqj_g5-s3BZmyywwH/view?usp=drive_link",
         },
         {
           id: 7,
           name: "Windows Health Monitoring",
           bgimage: "./assets/projects/7.png",
           description: "lmao lupacik",
-          links: "bodoamad.com",
+          links:
+            "https://drive.google.com/file/d/14Yu1WhaeXMyXghB14Mnrfbc2_Qe7z3cz/view?usp=drive_link",
         },
         {
           id: 8,
-          name: "More to Come!  ",
+          name: "Halal Registration App",
+          bgimage: "./assets/projects/8.jpg",
+          description: "lmao lupacik",
+          links:
+            "https://drive.google.com/file/d/1NeP4CECQrv6pGLeOoCbMguuvPAuQyvr7/view?usp=drive_link",
+        },
+      ],
+    },
+    {
+      page: 99,
+      data: [
+        {
+          id: 9,
+          name: "More to Come!",
           bgimage: "",
           description: "lmao lupacik",
           links: null,
