@@ -23,7 +23,7 @@ const ContactMeContent = ({ textColor, className }) => {
             target="_blank"
             href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${constants.email}`}
           >
-            <button className="group hover:bg-neutral-50 relative bg-neutral-300 rounded text-neutral-50 duration-100 font-bold flex justify-center gap-2 items-center p-2">
+            <button className="group hover:bg-neutral-300 relative bg-neutral-50 rounded text-neutral-50 duration-100 font-bold flex justify-center gap-2 items-center p-2">
               <GmailIcon />
             </button>
           </a>
