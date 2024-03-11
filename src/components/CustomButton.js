@@ -4,9 +4,8 @@ const CustomButton = ({ children, onClick, href, disabled, className }) => {
     <button
       type="button"
       onClick={onClick}
-      href={href}
       disabled={disabled}
-      class={`text-2xl pt-1 pb-1 pl-4 pr-4 font-jockey text-black border-black border-4 bg-white rounded-full ${className}`}
+      className={`group flex items-center justify-center text-2xl pt-1 pb-1 pl-4 pr-4 font-jockey border-black border-4 bg-white rounded-full hover:bg-black hover:text-white transition-colors ${className}`}
     >
       {children}
     </button>

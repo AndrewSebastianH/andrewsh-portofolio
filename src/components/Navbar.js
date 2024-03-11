@@ -31,8 +31,24 @@ const Marquee = () => {
   );
 };
 
-const Navbar = ({ onHeightChange }) => {
+const Navbar = ({ onHeightChange, refs }) => {
   const navbarRef = useRef(null);
+
+  const scrollToRef = (ref, yOffset) => {
+    if (ref.current) {
+      const element = ref.current;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
+  // const scrollToRef = (ref) => () => {
+  //   ref.current?.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   useEffect(() => {
     const height = navbarRef.current.offsetHeight;
@@ -54,12 +70,21 @@ const Navbar = ({ onHeightChange }) => {
         <div className="m-5">
           <div className="flex bg-white items-center justify-between">
             <div className="buttons gap-3 flex">
-              <CustomButton>
-                <HomeIcon />
+              <CustomButton
+                onClick={scrollToRef(refs.homeRef, 0)}
+                className="icon-button"
+              >
+                <HomeIcon className="icon" />
               </CustomButton>
-              <CustomButton>EXP</CustomButton>
-              <CustomButton>PROJECTS</CustomButton>
-              <CustomButton>CONTACT ME</CustomButton>
+              <CustomButton onClick={() => scrollToRef(refs.expRef, 0)}>
+                EXP
+              </CustomButton>
+              <CustomButton onClick={scrollToRef(refs.projectsRef, 0)}>
+                PROJECTS
+              </CustomButton>
+              <CustomButton onClick={scrollToRef(refs.contactRef, 0)}>
+                CONTACT ME
+              </CustomButton>
             </div>
             <div className="text-2.5xl font-bebas">
               <Typewriter

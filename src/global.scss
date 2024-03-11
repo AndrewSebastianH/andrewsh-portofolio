@@ -53,6 +53,11 @@ body {
   box-sizing: border-box;
 }
 
+.icon-button:hover .icon {
+  fill: #ffffff;
+  transition: 0.1s all;
+}
+
 .background {
   height: calc(100vh - var(--navbar-height));
   background-color: #000000;
