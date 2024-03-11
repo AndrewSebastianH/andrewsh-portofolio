@@ -36,9 +36,16 @@ export default function ProjectSlider() {
         }}
         modules={[EffectCreative, Pagination, Autoplay]}
         className="h-full w-full"
+        style={{
+          "--swiper-pagination-color": "#f2f2f2",
+          "--swiper-pagination-bullet-inactive-color": "#f6f6f6",
+          "--swiper-pagination-bullet-inactive-opacity": "0.4",
+          "--swiper-pagination-bullet-size": "12px",
+          "--swiper-pagination-bullet-horizontal-gap": "8px",
+        }}
       >
         {projectsData.map((page) => (
-          <SwiperSlide key={page.page} className="w-full h-full">
+          <SwiperSlide key={page.page} className="w-full">
             <div className=" w-full h-full grid grid-cols-2 gap-2 grid-rows-2">
               {page.data.map((item) => (
                 <div
@@ -46,10 +53,12 @@ export default function ProjectSlider() {
                   key={item.id}
                   style={{ backgroundImage: `url(${item.bgimage})` }}
                 >
-                  <div className="absolute inset-0 bg-black opacity-70 hover:opacity-30  transition-opacity" />
-                  <div className="relative flex w-72">
-                    <p>{item.name}</p>
-                  </div>
+                  <a className="decoration-0" href={item.links} target="_blank">
+                    <div className="absolute inset-0 bg-black opacity-70 hover:opacity-30  transition-opacity" />
+                    <div className="relative flex w-72">
+                      <p>{item.name}</p>
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>
