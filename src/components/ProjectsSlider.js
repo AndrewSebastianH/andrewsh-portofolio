@@ -27,7 +27,14 @@ export default function ProjectSlider() {
             translate: ["100%", 0, 0],
           },
         }}
-        modules={[EffectCreative]}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+        modules={[EffectCreative, Pagination, Autoplay]}
         className="h-full w-full"
       >
         {projectsData.map((page) => (
