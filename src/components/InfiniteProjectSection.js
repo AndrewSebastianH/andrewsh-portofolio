@@ -16,7 +16,7 @@ const InfiniteProjectSection = ({ text }) => {
       const duplicatedItem = item.cloneNode(true);
       carouselItem.appendChild(duplicatedItem);
     });
-    carouselItem.style.animation = "move 10s linear infinite";
+    carouselItem.style.animation = "move 12s linear infinite";
   });
 
   return (

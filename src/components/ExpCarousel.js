@@ -7,13 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../styles/carousel.scss";
 import { constants } from "./constants/constants";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 export default function ExpCarousel() {
   const experienceData = constants?.experiences;
   return (
     <>
       <Swiper
+        initialSlide={1}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -25,8 +26,14 @@ export default function ExpCarousel() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 6000,
+          disableOnInteraction: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="h-4/5 py-10"
         loop={false}
         style={{
