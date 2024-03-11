@@ -18,21 +18,23 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, RoughEase);
 
 function App() {
   const [navbarHeight, setNavbarHeight] = useState(0);
-  const homeRef = useRef(null);
-  const expRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const scrollToFormContainer = () => {
+    const formContainer = document.getElementById("form-container");
+
+    if (formContainer) {
+      formContainer.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     // Wrapper
     <div className="min-w-max md:h-screen flex flex-col ">
-      <Navbar
-        refs={{ homeRef, expRef, projectsRef, contactRef }}
-        onHeightChange={setNavbarHeight}
-      />
+      <Navbar onHeightChange={setNavbarHeight} />
       <div style={{ paddingTop: `${navbarHeight}px` }}>
         {/* 1st Sect - Home*/}
-        <section className="home-section relative shrink-0 p-8 ">
+        <section id="home" className="home-section relative shrink-0 p-8 ">
           <div className="mainContainer absolute -z-40 top-0 left-0 right-0 h-full background " />
 
           <div className="w-full rounded-2xl shadow sm:p-8 border-black border-4 bg-white">
@@ -67,8 +69,8 @@ function App() {
 
       {/* 2nd Sect - Experience*/}
       <section
-        ref={expRef}
-        className="exp-section background2 h-screen shrink-0 pt-5 bg-black"
+        id="experience"
+        className="exp-section background2 shrink-0 bg-black"
       >
         <div className="flex justify-end">
           <div className="text-white font-jockey font-outline-2-white text-4xl pr-10">
@@ -82,22 +84,24 @@ function App() {
 
       {/* 3rd Sect - Projects*/}
       <section
-        ref={projectsRef}
-        className="projects-section relative overflow-hidden flex flex-col shrink-0 p-8 bg-black border-t-4 border-black"
+        id="project"
+        className="projects-section relative shrink-0 p-8 bg-black "
       >
-        <div className="flex flex-row">
-          <div className="leading-snug w-[40%]">
-            <InfiniteProjectSection text="PROJECTS" />
-          </div>
-          <div className="flex-initial grow-0 flex-row h-[500px] w-fit">
-            <ProjectSlider />
+        <div className="overflow-y-hidden ">
+          <div className="flex flex-row">
+            <div className="leading-snug w-[40%]">
+              <InfiniteProjectSection text="PROJECTS" />
+            </div>
+            <div className="flex-initial grow-0 flex-row md:h-[500px] w-fit">
+              <ProjectSlider />
+            </div>
           </div>
         </div>
       </section>
 
       {/* 4th Sect - Contact me*/}
       <section
-        ref={contactRef}
+        id="contact-me"
         className="contact-section shrink-0 relative background3 bg-white p-8 pt-10"
       >
         {/* Ghost */}

@@ -31,24 +31,20 @@ const Marquee = () => {
   );
 };
 
-const Navbar = ({ onHeightChange, refs }) => {
+const Navbar = ({ onHeightChange }) => {
   const navbarRef = useRef(null);
 
-  const scrollToRef = (ref, yOffset) => {
-    if (ref.current) {
-      const element = ref.current;
-      const y =
-        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  const scrollTo = (sectionId) => {
+    const targetContainer = document.getElementById(sectionId);
+    console.log(targetContainer);
 
-      window.scrollTo({ top: y, behavior: "smooth" });
+    if (targetContainer) {
+      targetContainer.scrollIntoView({ behavior: "smooth" });
+      // const y =
+      //   targetContainer.getBoundingClientRect().top + window.scrollY + yOffset;
+      // window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
-
-  // const scrollToRef = (ref) => () => {
-  //   ref.current?.scrollIntoView({
-  //     behavior: "smooth",
-  //   });
-  // };
 
   useEffect(() => {
     const height = navbarRef.current.offsetHeight;
@@ -71,22 +67,22 @@ const Navbar = ({ onHeightChange, refs }) => {
           <div className="flex bg-white items-center justify-between">
             <div className="buttons gap-3 flex">
               <CustomButton
-                onClick={scrollToRef(refs.homeRef, 0)}
+                onClick={() => scrollTo("home", 0)}
                 className="icon-button"
               >
                 <HomeIcon className="icon" />
               </CustomButton>
-              <CustomButton onClick={() => scrollToRef(refs.expRef, 0)}>
+              <CustomButton onClick={() => scrollTo("experience", 0)}>
                 EXP
               </CustomButton>
-              <CustomButton onClick={scrollToRef(refs.projectsRef, 0)}>
+              <CustomButton onClick={() => scrollTo("project", 0)}>
                 PROJECTS
               </CustomButton>
-              <CustomButton onClick={scrollToRef(refs.contactRef, 0)}>
+              <CustomButton onClick={() => scrollTo("contact-me", 0)}>
                 CONTACT ME
               </CustomButton>
             </div>
-            <div className="text-2.5xl font-bebas">
+            <div className="hidden md:flex text-2.5xl font-bebas">
               <Typewriter
                 options={{
                   strings: [

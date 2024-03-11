@@ -34,10 +34,10 @@ export default function ExpCarousel() {
           disableOnInteraction: true,
         }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="h-4/5 py-10"
+        className=""
         loop={false}
         style={{
-          "--swiper-pagination-color": "#f2f2f2",
+          "--swiper-pagination-color": "#f6f6f6",
           "--swiper-pagination-bullet-inactive-color": "#f6f6f6",
           "--swiper-pagination-bullet-inactive-opacity": "0.4",
           "--swiper-pagination-bullet-size": "12px",
@@ -45,8 +45,8 @@ export default function ExpCarousel() {
         }}
       >
         {experienceData.map((item) => (
-          <SwiperSlide className="w-1/2 h-full" key={item.id}>
-            <div className="p-10 flex flex-row gap-5 h-full  border-black border-8 rounded-xl bg-white">
+          <SwiperSlide className="w-1/2 pb-10" key={item.id}>
+            <div className="p-10 flex flex-row gap-5 border-black border-8 rounded-xl bg-white">
               <div className="flex flex-col w-[50%]">
                 <div className="rounded-xl">
                   <img

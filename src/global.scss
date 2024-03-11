@@ -53,6 +53,18 @@ body {
   box-sizing: border-box;
 }
 
+#home {
+  scroll-margin-top: 250em;
+}
+
+#experience {
+  scroll-margin-top: 125px;
+}
+
+#project {
+  scroll-margin-top: 140px;
+}
+
 .icon-button:hover .icon {
   fill: #ffffff;
   transition: 0.1s all;
