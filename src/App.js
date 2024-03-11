@@ -89,7 +89,7 @@ function App() {
           <div className="leading-snug w-[40%]">
             <InfiniteProjectSection text="PROJECTS" />
           </div>
-          <div className="flex-initial flex-row h-[500px] w-[55%]">
+          <div className="flex-initial grow-0 flex-row h-[500px] w-fit">
             <ProjectSlider />
           </div>
         </div>
