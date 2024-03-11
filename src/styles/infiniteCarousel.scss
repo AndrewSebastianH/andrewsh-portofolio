@@ -5,23 +5,7 @@
         translateY(calc(-50% - 0.5em));
     }
 }
-// .infinite-carousel {
-//     -webkit-mask: linear-gradient(
-//         0deg,
-//         transparent,
-//         #fff 15%,
-//         #fff 90%,
-//         transparent
-//     );
-//     mask: linear-gradient(
-//         0deg,
-//         transparent,
-//         #fff 15%,
-//         #fff 90%,
-//         transparent
-//     );
-// }
 
 .infinite-carousel div {
-    animation: moveup 8s linear infinite;
+    animation: moveup 6s linear infinite;
 }
