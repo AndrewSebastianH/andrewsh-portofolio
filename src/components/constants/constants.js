@@ -12,7 +12,7 @@ const constants = {
   experiences: [
     {
       id: 1,
-      name: "PT Bank Neo Commerce Tbk",
+      name: "Bank Neo Commerce",
       title: "Front-End Developer",
       content:
         "Developed a training management system using Next.Js and Antd." +

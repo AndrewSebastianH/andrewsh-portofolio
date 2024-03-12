@@ -45,13 +45,13 @@ export default function ProjectSlider() {
             <div className=" w-full h-full grid grid-cols-2 gap-2 grid-rows-2">
               {page.data.map((item) => (
                 <div
-                  className="flex relative font-bebas text-2xl text-white items-center justify-center hover:scale-105 transition-transform bg-cover bg-center"
+                  className="flex relative font-bebas text-xl md:text-2xl text-white items-center justify-center hover:scale-105 transition-transform bg-cover bg-center"
                   key={item.id}
                   style={{ backgroundImage: `url(${item.bgimage})` }}
                 >
                   <a className="decoration-0" href={item.links} target="_blank">
-                    <div className="absolute inset-0 bg-black opacity-70 hover:opacity-30  transition-opacity" />
-                    <div className="relative flex w-72">
+                    <div className="absolute inset-0 bg-black opacity-70 hover:opacity-30 transition-opacity" />
+                    <div className="relative flex ">
                       <p>{item.name}</p>
                     </div>
                   </a>

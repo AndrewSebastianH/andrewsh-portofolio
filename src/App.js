@@ -36,30 +36,30 @@ function App() {
         {/* 1st Sect - Home*/}
         <section id="home" className="home-section relative shrink-0 p-8 ">
           <div className="mainContainer absolute -z-40 top-0 left-0 right-0 h-full background " />
-          <div className="absolute">
+          {/* <div className="absolute">
             <Spline scene="https://prod.spline.design/t3Gpmaewj-TjBQTp/scene.splinecode" />
-          </div>
-          <div className="w-full rounded-2xl shadow sm:p-8 border-black border-4 bg-white">
-            <div className="font-jockey text-4xl md:-rotate-12">
+          </div> */}
+          <div className="w-full h-full rounded-2xl shadow sm:p-8 border-black border-4 bg-white">
+            <div className="font-jockey text-4xl md:-rotate-12 relative">
               <p className="font-outline-3 text-black pl-5 md:pl-0 md:absolute xl:left-1 bottom-1 xl:bottom-5 xl:-translate-y-1/2">
                 HELLO!
               </p>
             </div>
-            <div className="flex flex-wrap gap-5">
-              <div className="flex-1 p-5 md:pt-28">
-                <p className="font-bebas text-2xl">
+            <div className="flex gap-5 h-full">
+              <div className="flex flex-col md:justify-center p-5 md:max-w-[50%] ">
+                <p className="font-bebas text-2xl ">
                   THANK YOU FOR VISITING MY PAGE!
                 </p>
                 <br></br>
-                <p className="font-bebas text-2xl md:max-w-lg">
+                <p className="font-bebas text-2xl">
                   I’M ANDREW, A STUDENT MAJORING IN INFORMATION TECHNOLOGY. I
                   CREATED THIS PORTFOLIO WEBSITE AS A FUN LEARNING PROJECT AND
                   TO SHARE MY EXPERIENCES WITH OTHER PEOPLE.
                 </p>
               </div>
-              <div className="justify-items-center">
+              <div className="hidden md:flex w-[90%] justify-center items-center">
                 <img
-                  className="portrait md:visible md:w-[67%] align-center hover:animate-wiggle "
+                  className="portrait hover:animate-wiggle w-[60%]"
                   src="./assets/Portrair.png"
                   alt="Portrait"
                 />
@@ -75,11 +75,11 @@ function App() {
         className="exp-section background2 shrink-0 bg-black"
       >
         <div className="flex justify-end">
-          <div className="text-white font-jockey font-outline-2-white text-4xl pr-10">
-            EXPERIENCES / EDUCATION
+          <div className="text-white font-jockey font-outline-1-white md:font-outline-2-white text-2xl md:text-4xl pr-10">
+            EXPERIENCES & EDUCATION
           </div>
         </div>
-        <div className="">
+        <div className="md:flex h-[85%]">
           <ExpCarousel />
         </div>
       </section>
@@ -87,16 +87,17 @@ function App() {
       {/* 3rd Sect - Projects*/}
       <section
         id="project"
-        className="projects-section relative shrink-0 p-8 bg-black "
+        className="projects-section relative md:shrink-0 md:p-8 bg-black "
       >
-        <div className="overflow-y-hidden ">
-          <div className="flex flex-row">
-            <div className="leading-snug w-[40%]">
-              <InfiniteProjectSection text="PROJECTS" />
-            </div>
-            <div className="flex-initial grow-0 flex-row md:h-[500px] w-fit">
-              <ProjectSlider className="z-0" />
-            </div>
+        <div className="flex flex-col md:flex-row h-full overflow-y-hidden ">
+          <div className="flex pl-5 md:hidden text-white text-2xl font-jockey">
+            PROJECTS
+          </div>
+          <div className="hidden md:flex leading-snug w-[40%] ">
+            <InfiniteProjectSection text="PROJECTS" />
+          </div>
+          <div className="h-full p-5 md:p-0 md:h-[500px] w-fit md:flex">
+            <ProjectSlider className="z-0" />
           </div>
         </div>
       </section>
@@ -108,7 +109,9 @@ function App() {
       >
         <div className="h-full w-full aspect-[16/9] overflow-hidden">
           <div className="bg-black h-full  grid place-content-center ">
-            <div className="text-white font-black text-9xl">CONTACT ME!</div>
+            <div className="text-white font-black text-3xl md:text-9xl">
+              CONTACT ME!
+            </div>
             <div className="w-full">
               <ContactMeContent textColor="white" />
             </div>

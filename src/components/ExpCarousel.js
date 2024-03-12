@@ -34,7 +34,6 @@ export default function ExpCarousel() {
           disableOnInteraction: true,
         }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className=""
         loop={false}
         style={{
           "--swiper-pagination-color": "#f6f6f6",
@@ -45,36 +44,40 @@ export default function ExpCarousel() {
         }}
       >
         {experienceData.map((item) => (
-          <SwiperSlide className="w-1/2 pb-10" key={item.id}>
-            <div className="p-10 flex flex-row gap-5 border-black border-8 rounded-xl bg-white">
+          <SwiperSlide
+            className="w-full md:h-full md:w-1/2 pb-5 md:pb-10"
+            key={item.id}
+          >
+            <div className="h-full p-10 flex flex-row gap-5 border-black border-8 rounded-xl bg-white">
               <div className="flex flex-col w-[50%]">
-                <div className="rounded-xl">
-                  <img
-                    src={item.icon}
-                    className="max-w-[250px] h-[250px] object-contain"
-                  />
+                <div className="flex h-full max-w-40 max-h-40 md:max-w-[250px] md:h-[250px] justify-center items-center">
+                  <img src={item.icon} />
                 </div>
-                <div className="name font-bebas text-xl">
-                  {item.name.toUpperCase()}
-                </div>
-                <div className="date font-bebas text-xl ">
-                  {item.date.toUpperCase()}
+                <div className="flex flex-col justify-end h-full">
+                  <div className="name font-bebas text-xl md:text-xl">
+                    {item.name.toUpperCase()}
+                  </div>
+                  <div className="date font-bebas text-xl md:text-xl ">
+                    {item.date.toUpperCase()}
+                  </div>
                 </div>
               </div>
 
               <div className="flex-1 break-words">
-                <div className="jobTitle flex flex-auto font-bebas text-2xl">
+                <div className="jobTitle flex flex-auto font-bebas text-xl md:text-2xl">
                   {item.title.toUpperCase()}
                 </div>
-                <div className="border-b-2 border-gray-300 pb-1">
+                <div className="border-b-2 text-md md:text-lg border-gray-300 pb-1">
                   {item.category}
                 </div>
 
-                <div className=" pt-2">
+                <div className="pt-1">
                   <ul style={{ listStyleType: "disc" }}>
                     {item.content.split("\n").map((line, index) => (
                       <React.Fragment key={index}>
-                        <li className="leading-6 pb-2">{line}</li>
+                        <li className="leading-5 break-words text-sm md:text-lg md:leading-6 pb-1 md:pb-2">
+                          {line}
+                        </li>
                       </React.Fragment>
                     ))}
                   </ul>
