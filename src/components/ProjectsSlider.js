@@ -30,11 +30,7 @@ export default function ProjectSlider() {
         pagination={{
           clickable: true,
         }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
-        }}
-        modules={[EffectCreative, Pagination, Autoplay]}
+        modules={[EffectCreative, Pagination]}
         className="h-full w-full"
         style={{
           "--swiper-pagination-color": "#f2f2f2",
