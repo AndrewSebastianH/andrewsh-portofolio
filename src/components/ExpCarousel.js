@@ -49,25 +49,25 @@ export default function ExpCarousel() {
             key={item.id}
           >
             <div className="h-full p-10 flex flex-row gap-5 border-black border-8 rounded-xl bg-white">
-              <div className="flex flex-col w-[50%]">
+              <div className="flex flex-col w-[30%] md:w-[50%]">
                 <div className="flex h-full max-w-40 max-h-40 md:max-w-[250px] md:h-[250px] justify-center items-center">
                   <img src={item.icon} />
                 </div>
                 <div className="flex flex-col justify-end h-full">
-                  <div className="name font-bebas text-xl md:text-xl">
+                  <div className="name font-bebas text-md md:text-xl">
                     {item.name.toUpperCase()}
                   </div>
-                  <div className="date font-bebas text-xl md:text-xl ">
+                  <div className="date font-bebas text-md md:text-xl ">
                     {item.date.toUpperCase()}
                   </div>
                 </div>
               </div>
 
               <div className="flex-1 break-words">
-                <div className="jobTitle flex flex-auto font-bebas text-xl md:text-2xl">
+                <div className="jobTitle flex flex-auto font-bebas text-md md:text-2xl">
                   {item.title.toUpperCase()}
                 </div>
-                <div className="border-b-2 text-md md:text-lg border-gray-300 pb-1">
+                <div className="border-b-2 text-xs font-thin md:text-lg border-gray-300 pb-1">
                   {item.category}
                 </div>
 
@@ -75,7 +75,7 @@ export default function ExpCarousel() {
                   <ul style={{ listStyleType: "disc" }}>
                     {item.content.split("\n").map((line, index) => (
                       <React.Fragment key={index}>
-                        <li className="leading-5 break-words text-sm md:text-lg md:leading-6 pb-1 md:pb-2">
+                        <li className="leading-5 break-words text-xs md:text-lg md:leading-6 pb-1 md:pb-2">
                           {line}
                         </li>
                       </React.Fragment>

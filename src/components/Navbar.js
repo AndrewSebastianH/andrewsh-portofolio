@@ -62,15 +62,15 @@ const Navbar = ({ onHeightChange }) => {
 
   return (
     <>
-      <div ref={navbarRef} className="fixed z-50 top-0 left-0 right-0 bg-white">
+      <div ref={navbarRef} className="fixed z-30 top-0 left-0 right-0 bg-white">
         <div className="m-5">
           <div className="flex bg-white items-center justify-between">
-            <div className="buttons gap-3 flex">
+            <div className="buttons w-full justify-between md:justify-normal gap-3 flex">
               <CustomButton
                 onClick={() => scrollTo("home", 0)}
                 className="icon-button"
               >
-                <HomeIcon className="icon" />
+                <HomeIcon className="icon w-5 md:w-8" />
               </CustomButton>
               <CustomButton onClick={() => scrollTo("experience", 0)}>
                 EXP

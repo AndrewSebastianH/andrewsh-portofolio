@@ -40,18 +40,18 @@ function App() {
             <Spline scene="https://prod.spline.design/t3Gpmaewj-TjBQTp/scene.splinecode" />
           </div> */}
           <div className="w-full h-full rounded-2xl shadow sm:p-8 border-black border-4 bg-white">
-            <div className="font-jockey text-4xl md:-rotate-12 relative">
-              <p className="font-outline-3 text-black pl-5 md:pl-0 md:absolute xl:left-1 bottom-1 xl:bottom-5 xl:-translate-y-1/2">
+            <div className="font-jockey text-2xl md:text-4xl md:-rotate-12 relative">
+              <p className="font-outline-1 md:font-outline-3 text-black pl-5 md:pl-0 md:absolute md:left-1 bottom-1 md:bottom-5 md:-translate-y-1/2">
                 HELLO!
               </p>
             </div>
             <div className="flex gap-5 h-full">
               <div className="flex flex-col md:justify-center p-5 md:max-w-[50%] ">
-                <p className="font-bebas text-2xl ">
+                <p className="font-bebas text-xl md:text-2xl ">
                   THANK YOU FOR VISITING MY PAGE!
                 </p>
                 <br></br>
-                <p className="font-bebas text-2xl">
+                <p className="font-bebas text-xl md:text-2xl">
                   I’M ANDREW, A STUDENT MAJORING IN INFORMATION TECHNOLOGY. I
                   CREATED THIS PORTFOLIO WEBSITE AS A FUN LEARNING PROJECT AND
                   TO SHARE MY EXPERIENCES WITH OTHER PEOPLE.
