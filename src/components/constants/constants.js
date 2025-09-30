@@ -66,7 +66,7 @@ const constants = {
         {
           id: 1,
           name: "Closer - Parenting Companion App",
-          bgimage: "./assets/projects/5.png",
+          bgimage: "./assets/projects/closer.png",
           description: "lmao lupacik",
           links: "https://github.com/AndrewSebastianH/thesis-frontend",
         },
