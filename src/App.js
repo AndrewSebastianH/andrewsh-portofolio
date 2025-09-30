@@ -96,7 +96,7 @@ function App() {
           <div className="hidden md:flex leading-snug w-[40%] ">
             <InfiniteProjectSection text="PROJECTS" />
           </div>
-          <div className="h-full p-5 md:p-0 md:h-[500px] w-fit md:flex">
+          <div className="h-full p-5 md:p-0 md:h-full w-fit md:flex">
             <ProjectSlider className="z-0" />
           </div>
         </div>
@@ -116,20 +116,6 @@ function App() {
               <ContactMeContent textColor="white" />
             </div>
           </div>
-
-          {/* <div className="diff-resizer"></div>
-          <div className="diff-item-1">
-            <div className="bg-black text-white text-9xl grid place-content-center">
-              CONTACT ME!
-            </div>
-            <ContactMeContent textColor="white" />
-          </div>
-          <div className="diff-item-2">
-            <div className="bg-white text-9xl grid place-content-center">
-              CONTACT ME!
-            </div>
-            <ContactMeContent className="z-50 absolute" textColor="black" />
-          </div> */}
         </div>
       </section>
     </div>

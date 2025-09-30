@@ -82,12 +82,11 @@ const Navbar = ({ onHeightChange }) => {
                 CONTACT ME
               </CustomButton>
             </div>
-            <div className="hidden md:flex text-2.5xl font-bebas">
+            <div className="hidden md:flex text-2.5xl font-bebas whitespace-nowrap">
               <Typewriter
                 options={{
                   strings: [
                     "Andrew Sebastian Hardianta",
-                    "IT Student",
                     "Hardworker",
                     "Programmer",
                     "Web Developer",
