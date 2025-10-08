@@ -10,7 +10,9 @@ import { constants } from "./constants/constants";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 export default function ExpCarousel() {
-  const experienceData = constants?.experiences;
+  // const experienceData = constants?.experiences;
+
+  const experienceData = [...constants.experiences].sort((a, b) => b.id - a.id);
   return (
     <>
       <Swiper

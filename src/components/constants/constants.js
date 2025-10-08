@@ -11,7 +11,7 @@ const constants = {
 
   experiences: [
     {
-      id: 1,
+      id: 3,
       name: "Bank Neo Commerce",
       title: "Front-End Developer",
       content:
@@ -23,7 +23,7 @@ const constants = {
       icon: "./assets/neobank.png",
     },
     {
-      id: 2,
+      id: 1,
       name: "Swiss German University",
       title: "Information Technology",
       content:
@@ -36,7 +36,7 @@ const constants = {
       icon: "./assets/sgu.png",
     },
     {
-      id: 3,
+      id: 2,
       name: "Fachhochschule Sudwestfalen",
       title: "Bachelor of Engineering",
       content:
@@ -46,7 +46,7 @@ const constants = {
       icon: "./assets/fh.png",
     },
     {
-      id: 4,
+      id: 5,
       name: "StudentsxCEOs InterSummit",
       title: "Fullstack Web Developer",
       content:
@@ -56,6 +56,18 @@ const constants = {
       category: "Contract Work",
       date: "JUL 2024 - DEC 2024",
       icon: "./assets/sxc.png",
+    },
+    {
+      id: 4,
+      name: "PowerByte GmbH (Germany)",
+      title: "Computer Hardware Technician",
+      content:
+        "Diagnosed and repaired more than 100 customer's problems with their Hardware" +
+        "\n Collaborated with a team of technicians, strengthening teamwork and communication abilities. " +
+        "\n Managed multiple tasks and projects simultaneously, developing strong organizational and time-management skills.",
+      category: "Internship",
+      date: "MAR 2024 - AUG 2024",
+      icon: "./assets/powerbyte.png",
     },
   ],
 
