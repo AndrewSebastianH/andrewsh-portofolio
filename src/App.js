@@ -6,6 +6,8 @@ import Navbar, { navbarHeight } from "./components/Navbar";
 import ExpCarousel from "./components/ExpCarousel";
 import InfiniteProjectSection from "./components/InfiniteProjectSection";
 import ProjectSlider from "./components/ProjectsSlider";
+import LanguagesToolsSection from "./components/LanguageToolsSection";
+
 import { gsap } from "gsap";
 import { RoughEase } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -52,7 +54,7 @@ function App() {
                 </p>
                 <br></br>
                 <p className="font-bebas text-xl md:text-2xl">
-                  I’M ANDREW, A STUDENT MAJORING IN INFORMATION TECHNOLOGY. I
+                  I’M ANDREW, AN INFORMATION TECHNOLOGY FRESH GRADUATE. I
                   CREATED THIS PORTFOLIO WEBSITE AS A FUN LEARNING PROJECT AND
                   TO SHARE MY EXPERIENCES WITH OTHER PEOPLE.
                 </p>
@@ -101,8 +103,20 @@ function App() {
           </div>
         </div>
       </section>
+      <section
+        id="languages"
+        className="languages-section shrink-0 p-8 bg-black"
+      >
+        <div className="flex justify-end">
+          <div className="text-white font-jockey font-outline-1-white md:font-outline-2-white text-2xl md:text-4xl pr-10">
+            LANGUAGES & TOOLS
+          </div>
+        </div>
 
-      {/* 4th Sect - Contact me*/}
+        <LanguagesToolsSection />
+      </section>
+
+      {/* 5th Sect - Contact me*/}
       <section
         id="contact-me"
         className="contact-section shrink-0 z-30 background3 bg-white p-8 pt-10"
