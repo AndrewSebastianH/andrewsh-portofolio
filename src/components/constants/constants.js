@@ -11,6 +11,19 @@ const constants = {
 
   experiences: [
     {
+      id: 6,
+      name: "Momogi Group",
+      title: "IT Management Trainee",
+      content:
+        "Worked as an IT Corporate Management Trainee, gaining hands-on experience in various aspects of IT management accross the sister companies of Momogi Group." +
+        "\n Developed full-stack applications using Next.js and Golang." +
+        "\n Actively trying out new technologies and tools to find the best solution for each project." +
+        "\n Actively communicated with diverse team departments, ensuring the fulfillment of project requirements.",
+      category: "Full-time Job",
+      date: "FEB 2026 - CURRENT",
+      icon: "./assets/momogi.png",
+    },
+    {
       id: 3,
       name: "Bank Neo Commerce",
       title: "Front-End Developer",

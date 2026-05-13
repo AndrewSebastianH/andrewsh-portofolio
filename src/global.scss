@@ -89,3 +89,15 @@ section {
   height: calc(100vh - var(--navbar-height));
   width: 100vw;
 }
+
+/* Languages section needs room for 3 stacked categories on mobile */
+#languages {
+  height: auto;
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+@media (min-width: 768px) {
+  #languages {
+    height: calc(100vh - var(--navbar-height));
+  }
+}

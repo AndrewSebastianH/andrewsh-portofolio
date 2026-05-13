@@ -1,5 +1,5 @@
 //ExpCarousel.js
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -50,10 +50,10 @@ export default function ExpCarousel() {
             className="w-full md:h-full md:w-1/2 pb-5 md:pb-10"
             key={item.id}
           >
-            <div className="h-full p-10 flex flex-row gap-5 border-black border-8 rounded-xl bg-white">
+            <div className="h-full p-4 md:p-10 flex flex-row gap-3 md:gap-5 border-black border-4 md:border-8 rounded-xl bg-white">
               <div className="flex flex-col w-[30%] md:w-[50%]">
                 <div className="flex h-full max-w-40 max-h-40 md:max-w-[250px] md:h-[250px] justify-center items-center">
-                  <img src={item.icon} />
+                  <img src={item.icon} alt={item.name} />
                 </div>
                 <div className="flex flex-col justify-end h-full">
                   <div className="name font-bebas text-md md:text-xl">

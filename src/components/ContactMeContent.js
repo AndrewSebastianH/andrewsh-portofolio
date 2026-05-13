@@ -4,38 +4,47 @@ import { ReactComponent as LinkedInIcon } from "../icons/linkedin.svg";
 import { ReactComponent as GmailIcon } from "../icons/gmail.svg";
 import { ReactComponent as GithubIcon } from "../icons/github.svg";
 
-const ContactMeContent = ({ textColor, className }) => {
-  return (
-    <div
-      className={`w-full h-full pt-10 text-2xl text-${textColor} font-bebas ${className}`}
+const SocialButton = ({ href, children, label, hoverClass, baseClass }) => (
+  <a target="_blank" rel="noreferrer" href={href} className="flex flex-col items-center gap-2">
+    <button
+      className={`group flex justify-center items-center p-3 md:p-2 w-16 h-16 md:w-14 md:h-14 rounded-lg font-bold duration-200 transition-colors ${baseClass} ${hoverClass}`}
     >
-      <div className="content-wrapper text-white flex flex-row w-full justify-between">
-        <div>
-          <a target="_blank" href={constants.linkedinURL}>
-            <button class="group h-14 w-14 hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-300 font-bold flex justify-center gap-2 items-center p-2">
-              <LinkedInIcon />
-            </button>
-          </a>
-        </div>
+      {children}
+    </button>
+    <span className="text-white font-jockey text-xs tracking-widest md:hidden">{label}</span>
+  </a>
+);
 
-        <div>
-          <a
-            target="_blank"
-            href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${constants.email}`}
-          >
-            <button className="group hover:bg-neutral-300 relative bg-neutral-50 rounded text-neutral-50 duration-100 font-bold flex justify-center gap-2 items-center p-2">
-              <GmailIcon />
-            </button>
-          </a>
-        </div>
+const ContactMeContent = ({ className }) => {
+  return (
+    <div className={`w-full pt-6 md:pt-10 ${className}`}>
+      <div className="flex flex-row justify-center md:justify-between gap-8 md:gap-0 w-full">
+        <SocialButton
+          href={constants.linkedinURL}
+          label="LINKEDIN"
+          baseClass="bg-sky-700 text-neutral-50"
+          hoverClass="hover:bg-sky-500"
+        >
+          <LinkedInIcon />
+        </SocialButton>
 
-        <div>
-          <a target="_blank" href={constants.githubURL}>
-            <button className="group icon-button hover:bg-[#222222] relative bg-neutral-50 rounded text-neutral-50 duration-100 font-bold flex justify-center gap-2 items-center p-2">
-              <GithubIcon className="icon" />
-            </button>
-          </a>
-        </div>
+        <SocialButton
+          href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${constants.email}`}
+          label="EMAIL"
+          baseClass="bg-neutral-100 text-neutral-900"
+          hoverClass="hover:bg-neutral-300"
+        >
+          <GmailIcon />
+        </SocialButton>
+
+        <SocialButton
+          href={constants.githubURL}
+          label="GITHUB"
+          baseClass="icon-button bg-neutral-100 text-neutral-900"
+          hoverClass="hover:bg-[#222222]"
+        >
+          <GithubIcon className="icon" />
+        </SocialButton>
       </div>
     </div>
   );
