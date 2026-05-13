@@ -93,7 +93,7 @@ const ToolIcon = ({ name, icon: Icon, color, delay, inView }) => (
     >
       <Icon
         style={{ color, display: "block" }}
-        className="text-[38px] md:text-[58px] transition-all duration-300 group-hover:scale-125 group-hover:drop-shadow-[0_0_16px_var(--glow-color)]"
+        className="text-[32px] md:text-[46px] transition-all duration-300 group-hover:scale-125 group-hover:drop-shadow-[0_0_16px_var(--glow-color)]"
       />
       <span className="text-white font-jockey text-[9px] md:text-[11px] tracking-wide text-center leading-tight opacity-50 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
         {name}
@@ -122,7 +122,7 @@ const Column = ({ category, title }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center w-full rounded-xl p-4 md:p-6 transition-all duration-700"
+      className="flex flex-col items-center w-full rounded-xl p-3 md:p-5 transition-all duration-700"
       style={{
         border: `1px solid ${accent}35`,
         boxShadow: inView
@@ -131,7 +131,7 @@ const Column = ({ category, title }) => {
       }}
     >
       {/* Title with glowing gradient underline */}
-      <div className="relative mb-5 md:mb-8 text-center w-full">
+      <div className="relative mb-3 md:mb-5 text-center w-full">
         <h3 className="text-white font-jockey text-xl md:text-2xl tracking-widest">
           {title}
         </h3>
@@ -146,7 +146,7 @@ const Column = ({ category, title }) => {
 
       {/* Icon grid — same cols on mobile and desktop, icon size differs via text-* */}
       <div
-        className="grid gap-5 md:gap-10 place-items-center w-full"
+        className="grid gap-3 md:gap-6 place-items-center w-full"
         style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
       >
         {items.map((tool, i) => (
@@ -159,7 +159,7 @@ const Column = ({ category, title }) => {
 
 export default function LanguagesToolsSection() {
   return (
-    <div className="mt-6 md:mt-10 w-full">
+    <div className="mt-3 md:mt-6 w-full">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
         <Column category="frontend" title="Frontend" />
         <Column category="backend" title="Backend" />

@@ -183,6 +183,13 @@ const constants = {
   linkedinURL: "https://www.linkedin.com/in/andrew-sebastian-hardianta/",
   githubURL: "https://github.com/AndrewSebastianH",
   email: "andrew.hardianta.business@gmail.com",
+  barcode: [
+    3, 2, 1, 2, 1, 3, 1, 2, 1, 3, 2, 1, 1, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 2,
+    3, 1, 1, 2, 3, 1, 2, 1, 3, 2, 11, 2, 1, 3, 1, 2, 1, 2, 3, 1, 2, 1, 3, 1, 2,
+    2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 2, 1, 1, 2, 3, 1, 13, 2, 1, 3, 2,
+    1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 7, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 2, 1,
+    2, 3, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 2, 10,
+  ],
 };
 
 export { constants };
