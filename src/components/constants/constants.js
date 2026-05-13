@@ -5,7 +5,7 @@ const constants = {
     "DON'T FORGET TO CONNECT WITH ME IN LINKEDIN!",
     "THIS WEBSITE IS MADE USING REACT.JS BY ME :)",
     "FUN FACT: THIS WEBSITE IS MADE AND DEPLOYED UNDER 2 WEEKS!",
-    "FUN FACT: GIRAFFES ARE 30 TIMES MORE LIKELY TO GET HIT BY LIGHTNING THAN PEOPLE!",
+    // "FUN FACT: GIRAFFES ARE 30 TIMES MORE LIKELY TO GET HIT BY LIGHTNING THAN PEOPLE!",
     "FUN FACT: MY FAVOURITE FLAVOUR IN ANYTHING IS CHOCOLATE!",
   ],
 
@@ -184,8 +184,8 @@ const constants = {
   githubURL: "https://github.com/AndrewSebastianH",
   email: "andrew.hardianta.business@gmail.com",
   barcode: [
-    3, 2, 1, 2, 1, 3, 1, 2, 1, 3, 2, 1, 1, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 2,
-    3, 1, 1, 2, 3, 1, 2, 1, 3, 2, 11, 2, 1, 3, 1, 2, 1, 2, 3, 1, 2, 1, 3, 1, 2,
+    3, 1, 5, 2, 3, 3, 1, 2, 1, 3, 2, 1, 1, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 2,
+    3, 1, 1, 2, 3, 1, 2, 1, 3, 2, 1, 2, 1, 3, 1, 2, 1, 2, 3, 1, 2, 1, 3, 1, 2,
     2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 2, 1, 3, 1, 2, 1, 1, 2, 3, 1, 13, 2, 1, 3, 2,
     1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 7, 2, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 2, 1,
     2, 3, 1, 2, 1, 3, 1, 2, 1, 3, 1, 2, 2, 10,

@@ -163,7 +163,7 @@ function App() {
                       <div className="flex gap-5 items-start">
                         <img
                           className="w-24 h-[116px] object-cover object-top border-2 border-black rounded shrink-0"
-                          src="./assets/Portrair.png"
+                          src="./assets/id_portrait.png"
                           alt="Andrew Sebastian Hardianta"
                         />
                         <div className="flex-1 min-w-0">
