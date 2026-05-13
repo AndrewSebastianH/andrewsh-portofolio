@@ -15,24 +15,61 @@ import {
   SiMaterialdesign,
   SiAntdesign,
   SiMongodb,
+  SiRedis,
 } from "react-icons/si";
 
 const tools = [
-  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", division: "frontend" },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6", division: "frontend" },
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+    color: "#F7DF1E",
+    division: "frontend",
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "#3178C6",
+    division: "frontend",
+  },
   { name: "React", icon: SiReact, color: "#61DAFB", division: "frontend" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF", division: "frontend" },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    color: "#FFFFFF",
+    division: "frontend",
+  },
   { name: "Flutter", icon: SiFlutter, color: "#02569B", division: "frontend" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8", division: "frontend" },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+    color: "#38BDF8",
+    division: "frontend",
+  },
   { name: "Sass", icon: SiSass, color: "#CC6699", division: "frontend" },
-  { name: "Material UI", icon: SiMaterialdesign, color: "#007FFF", division: "frontend" },
-  { name: "Ant Design", icon: SiAntdesign, color: "#1677FF", division: "frontend" },
+  {
+    name: "Material UI",
+    icon: SiMaterialdesign,
+    color: "#007FFF",
+    division: "frontend",
+  },
+  {
+    name: "Ant Design",
+    icon: SiAntdesign,
+    color: "#1677FF",
+    division: "frontend",
+  },
   { name: "Node.js", icon: SiNodedotjs, color: "#339933", division: "backend" },
   { name: "NestJS", icon: SiNestjs, color: "#E0234E", division: "backend" },
   { name: "Go", icon: SiGo, color: "#00ADD8", division: "backend" },
   { name: "MySQL", icon: SiMysql, color: "#4479A1", division: "database" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#336791", division: "database" },
+  {
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    color: "#336791",
+    division: "database",
+  },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248", division: "database" },
+  { name: "Redis", icon: SiRedis, color: "#DC382D", division: "database" },
 ];
 
 const CATEGORY_CONFIG = {
@@ -76,7 +113,7 @@ const Column = ({ category, title }) => {
       ([entry]) => {
         if (entry.isIntersecting) setInView(true);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -113,12 +150,7 @@ const Column = ({ category, title }) => {
         style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
       >
         {items.map((tool, i) => (
-          <ToolIcon
-            key={tool.name}
-            {...tool}
-            delay={i * 65}
-            inView={inView}
-          />
+          <ToolIcon key={tool.name} {...tool} delay={i * 65} inView={inView} />
         ))}
       </div>
     </div>
