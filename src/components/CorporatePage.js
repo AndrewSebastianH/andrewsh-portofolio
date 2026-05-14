@@ -24,20 +24,55 @@ import {
 } from "react-icons/si";
 
 const tools = [
-  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", division: "frontend" },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6", division: "frontend" },
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+    color: "#F7DF1E",
+    division: "frontend",
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "#3178C6",
+    division: "frontend",
+  },
   { name: "React", icon: SiReact, color: "#61DAFB", division: "frontend" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000", division: "frontend" },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+    color: "#000000",
+    division: "frontend",
+  },
   { name: "Flutter", icon: SiFlutter, color: "#02569B", division: "frontend" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8", division: "frontend" },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+    color: "#38BDF8",
+    division: "frontend",
+  },
   { name: "Sass", icon: SiSass, color: "#CC6699", division: "frontend" },
-  { name: "Material UI", icon: SiMaterialdesign, color: "#007FFF", division: "frontend" },
-  { name: "Ant Design", icon: SiAntdesign, color: "#1677FF", division: "frontend" },
+  {
+    name: "Material UI",
+    icon: SiMaterialdesign,
+    color: "#007FFF",
+    division: "frontend",
+  },
+  {
+    name: "Ant Design",
+    icon: SiAntdesign,
+    color: "#1677FF",
+    division: "frontend",
+  },
   { name: "Node.js", icon: SiNodedotjs, color: "#339933", division: "backend" },
   { name: "NestJS", icon: SiNestjs, color: "#E0234E", division: "backend" },
   { name: "Go", icon: SiGo, color: "#00ADD8", division: "backend" },
   { name: "MySQL", icon: SiMysql, color: "#4479A1", division: "database" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#336791", division: "database" },
+  {
+    name: "PostgreSQL",
+    icon: SiPostgresql,
+    color: "#336791",
+    division: "database",
+  },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248", division: "database" },
   { name: "Redis", icon: SiRedis, color: "#DC382D", division: "database" },
 ];
@@ -60,7 +95,7 @@ const CorporateNavbar = () => {
   const navItems = [
     ["corp-home", "ABOUT"],
     ["corp-experience", "EXPERIENCE"],
-    ["corp-projects", "PROJECTS"],
+    ["corp-projects", "PERSONAL PROJECTS"],
     ["corp-skills", "SKILLS"],
     ["corp-contact", "CONTACT"],
   ];
@@ -228,7 +263,7 @@ const CorporateProjects = () => {
       <div className="max-w-5xl mx-auto">
         <SectionLabel>Selected Work</SectionLabel>
         <h2 className="font-bebas text-4xl md:text-5xl text-slate-900 mb-2">
-          Projects
+          Personal Projects
         </h2>
         <SectionDivider />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
