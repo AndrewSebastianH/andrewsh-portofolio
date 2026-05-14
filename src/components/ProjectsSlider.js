@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-creative";
 // import "../styles/carousel.scss";
 import { constants } from "./constants/constants";
-import { EffectCreative, Pagination, Autoplay } from "swiper/modules";
+import { EffectCreative, Pagination } from "swiper/modules";
 
 export default function ProjectSlider() {
   const projectsData = constants?.projects;
@@ -49,7 +49,7 @@ export default function ProjectSlider() {
                   key={item.id}
                   style={{ backgroundImage: `url(${item.bgimage})` }}
                 >
-                  <a className="decoration-0" href={item.links} target="_blank">
+                  <a className="decoration-0" href={item.links} target="_blank" rel="noreferrer">
                     <div className="absolute inset-0 bg-black opacity-70 hover:opacity-30 transition-opacity" />
                     <div className="relative flex ">
                       <p>{item.name}</p>
